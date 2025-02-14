@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             .build()
     }
 
-    private val service: PicPayService by lazy {
-        retrofit.create(PicPayService::class.java)
+    private val service: UserService by lazy {
+        retrofit.create(UserService::class.java)
     }
 
     override fun onResume() {
